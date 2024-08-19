@@ -4,79 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLife Dashboard</title>
+    <title>Donation Dashboard</title>
     <link rel="stylesheet" href="../css/profile.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="logo">BLife</div>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Donate</a>
-            <a href="#">Contact</a>
-        </nav>
-        <div class="profile-pic">
-            <img src="profile-pic.png" alt="Profile Picture">
-        </div>
-    </header>
-
-    <main>
-        <section class="personal-info">
-            <div class="user-details">
+    <div class="container">
+        <div class="profile-section">
+            <img src="../images/5image.png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
                 <h2>Aziza</h2>
-                <p>ID: BL1234567</p>
+                <p class="id">ID: 111, 901234567</p>
             </div>
+        </div>
 
-            <div class="info-section">
-                <h3>Personal Information</h3>
-                <p>Date of birth: January 10, 2000</p>
-                <p>Gender: Female</p>
-                <p>Location: Tangier, Uzbekistan</p>
-                <p>Blood type: AB+</p>
-                <p>Donor status: Regular</p>
+        <div class="personal-info">
+            <h3>Personal Information</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <p class="label">Date of birth</p>
+                    <p>January 1, 2000</p>
+                </div>
+                <div class="info-item">
+                    <p class="label">Gender</p>
+                    <p>Female</p>
+                </div>
+                <div class="info-item">
+                    <p class="label">Location</p>
+                    <p>Tashkent, Uzbekistan</p>
+                </div>
+                <div class="info-item">
+                    <p class="label">Donor status</p>
+                    <p>Eligible</p>
+                </div>
+                <div class="info-item">
+                    <p class="label">Passport ID</p>
+                    <p>AB12345</p>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section class="donation-history">
+        <div class="donation-history">
             <h3>Donation History</h3>
             <ul>
-                <li>June 1, 2023 - Whole blood</li>
-                <li>March 3, 2023 - Whole blood</li>
-                <li>December 1, 2022 - Whole blood</li>
+                <li>
+                    <span class="date">June 1, 2022</span>
+                    <span class="type">Whole blood</span>
+                </li>
+                <li>
+                    <span class="date">March 1, 2022</span>
+                    <span class="type">Whole blood</span>
+                </li>
+                <li>
+                    <span class="date">December 1, 2021</span>
+                    <span class="type">Whole blood</span>
+                </li>
             </ul>
-            <button>Schedule next donation</button>
-        </section>
+            <p class="next-donation">Schedule your next donation: <strong>June 1, 2023</strong></p>
+        </div>
 
-        <section class="health-eligibility">
+
+
+
+
+        <div class="health-eligibility">
             <h3>Health and Eligibility</h3>
-            <p>Next eligible date: June 15, 2023</p>
-            <p>Your next donation is due: June 1, 2023</p>
-            <p>No current deferrals</p>
-        </section>
+            <div class="eligibility-grid">
+                <div class="eligibility-item">
+                    <p class="label">You are eligible to donate</p>
+                    <p>Whole blood</p>
+                </div>
+                <div class="eligibility-item">
+                    <p class="label">Your next donation is due</p>
+                    <p>June 1, 2023</p>
+                </div>
+                <div class="eligibility-item">
+                    <p class="label">You can donate in</p>
+                    <p>10 weeks</p>
+                </div>
+            </div>
+            <button class="schedule-button">Schedule Next Donation</button>
+        </div>
 
-        <section class="notifications">
+        <!-- Notifications Section -->
+        <div class="notifications">
             <h3>Notifications</h3>
             <ul>
-                <li>Your next donation is due on June 1, 2023</li>
-                <li>You have no deferrals</li>
-                <li>Your health information is expiring soon</li>
+                <li>Your next donation is due <span>June 1, 2023</span></li>
+                <li>We have not received your donation <span>June 1, 2023</span></li>
+                <li>Your health information is expiring soon <span>June 1, 2023</span></li>
             </ul>
-        </section>
+        </div>
 
-        <section class="reminders">
+        <!-- Reminders and Tips Section -->
+        <div class="reminders-tips">
             <h3>Reminders and Tips</h3>
             <ul>
-                <li>Drink plenty of water before donating</li>
-                <li>Eat a healthy meal before donating</li>
-                <li>Bring a photo ID and donor card</li>
+                <li>Drink plenty of water before donating <span>June 1, 2023</span></li>
+                <li>Eat a healthy meal before donating <span>June 1, 2023</span></li>
+                <li>Bring a photo ID and your donor card <span>June 1, 2023</span></li>
             </ul>
-        </section>
-    </main>
+        </div>
 
-    <footer class="footer">
-        <button>Schedule Next Donation</button>
-    </footer>
+        <!-- Add other sections as needed -->
+    </div>
 </body>
 
 </html>
