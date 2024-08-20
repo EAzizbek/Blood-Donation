@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLife - Save Lives</title>
+    <link rel="stylesheet" href="{% static 'css/dashboard/dashboard.css' %}">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>BLife</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{% url 'home' %}">Home</a></li>  <!-- Replace 'home' with your actual view name -->
+                <li><a href="#">Donate</a>
+                    <!-- <ul class="dropdown">
+                        <li><a href="#">Blood Donation</a></li>
+                        <li><a href="#">Organ Donation</a></li>
+                    </ul> -->
+                </li>
+                <li><a href="#">Contact</a></li>  <!-- Replace 'contact' with your actual view name -->
+            </ul>
+            <a  href="#" class="get-started-btn">Get Started</a>  <!-- Replace 'get_started' with your actual view name -->
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Save Lives, One Donation at a Time</h1>
+            <p>Join us in our mission to provide a critical lifeline to patients in need. Your blood donation can make a
+                world of difference.</p>
+            <a href="#" class="get-started-btn">Get Started</a>  <!-- Replace 'login' with your actual view name -->
+        </div>
+        <div class="hero-images">
+<!--            <img src="{% static 'images/7image.png' %}" alt="Donation Image 7">-->
+<!--            <img src="{% static 'images/1image.png' %}" alt="Donation Image 1">-->
+<!--            <img src="{% static 'images/2image.png' %}" alt="Donation Image 2">-->
+<!--            <img src="{% static 'images/3image.png' %}" alt="Donation Image 3">-->
+<!--            &lt;!&ndash; <img src="{% static 'images/4image.png' %}" alt="Donation Image 4"> &ndash;&gt;-->
+<!--            <img src="{% static 'images/5image.png' %}" alt="Donation Image 5">-->
+<!--            <img src="{% static 'images/6image.png' %}" alt="Donation Image 6">-->
+        </div>
+    </section>
+</body>
+
+</html>
